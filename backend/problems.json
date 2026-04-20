@@ -1,0 +1,232 @@
+[
+  {
+    "id": "1",
+    "type": "CODING",
+    "title": "Find the Maximum Element",
+    "description": "Given a list of integers `nums`, write a function `find_max(nums)` that returns the largest integer in the list. Do not use the built-in `max()` function if you want to challenge yourself (though it is allowed).\n\n**Example:**\n`find_max([1, 5, 3, 9, 2])` should return `9`.",
+    "signature": "def find_max(nums):\n    pass\n",
+    "rubric": null,
+    "options": null,
+    "correct_option_id": null
+  },
+  {
+    "id": "2",
+    "type": "FIND_REPLACE",
+    "title": "Fix the Average Calculator",
+    "description": "The function below is supposed to calculate the average of a list of numbers, but it contains a bug.\n\n```python\ndef calculate_average(numbers):\n    total = 0\n    for num in numbers:\n        total += num\n    return total / len(numbers) - 1\n```\n\n**Task 1:** Predict what this buggy code will output for `calculate_average([10, 20, 30])`.\n**Task 2:** Fix the code so it correctly calculates the average.",
+    "signature": "def calculate_average(numbers):\n    total = 0\n    for num in numbers:\n        total += num\n    return total / len(numbers) - 1\n",
+    "rubric": "The student should predict that the output will be 19.0 (or 19) because 60 / 3 - 1 = 19. They should identify the `- 1` as the error.",
+    "options": null,
+    "correct_option_id": null
+  },
+  {
+    "id": "3",
+    "type": "MCQ_THEORY",
+    "title": "Time Complexity of Binary Search",
+    "description": "What is the worst-case time complexity of finding an element in a sorted array using the Binary Search algorithm?",
+    "signature": null,
+    "rubric": null,
+    "options": [
+      { "id": "A", "text": "O(1)" },
+      { "id": "B", "text": "O(log n)" },
+      { "id": "C", "text": "O(n)" },
+      { "id": "D", "text": "O(n^2)" }
+    ],
+    "correct_option_id": "B"
+  },
+  {
+    "id": "4",
+    "type": "MCQ_CODING",
+    "title": "List Comprehension Output",
+    "description": "What is the output of the following Python code?\n\n```python\nnums = [1, 2, 3, 4, 5]\nresult = [x * 2 for x in nums if x % 2 != 0]\nprint(result)\n```",
+    "signature": null,
+    "rubric": null,
+    "options": [
+      { "id": "A", "text": "[2, 4, 6, 8, 10]" },
+      { "id": "B", "text": "[4, 8]" },
+      { "id": "C", "text": "[2, 6, 10]" },
+      { "id": "D", "text": "[1, 3, 5]" }
+    ],
+    "correct_option_id": "C"
+  },
+  {
+    "id": "5",
+    "type": "OPEN_ENDED",
+    "title": "Explain Recursion",
+    "description": "Explain the concept of recursion in programming. Include the two essential components required for a recursive function to work correctly and avoid infinite loops. Provide a simple pseudocode example.",
+    "signature": null,
+    "rubric": "The student must explain that recursion is when a function calls itself. They MUST identify the two key components: 1) A base case (termination condition) and 2) A recursive step (moving towards the base case). The pseudocode should demonstrate these two parts.",
+    "options": null,
+    "correct_option_id": null
+  },
+  {
+    "id": "6",
+    "type": "MCQ_REAL_WORLD",
+    "title": "Server Load Balancing",
+    "description": "You have a web application receiving 10,000 requests per minute. You have 4 servers behind a load balancer using a strict Round-Robin algorithm. Server A has 4 CPU cores, Server B has 8 cores, Server C has 2 cores, and Server D has 4 cores.\n\nAssuming all requests require the same amount of processing power, which server is most likely to experience high CPU utilization (bottleneck) first?",
+    "signature": null,
+    "rubric": null,
+    "options": [
+      { "id": "A", "text": "Server A (4 cores)" },
+      { "id": "B", "text": "Server B (8 cores)" },
+      { "id": "C", "text": "Server C (2 cores)" },
+      { "id": "D", "text": "Server D (4 cores)" }
+    ],
+    "correct_option_id": "C"
+  },
+  {
+    "id": "7",
+    "type": "MULTIPLE_CHOICE",
+    "title": "Problem Scoping Stage",
+    "description": "What is the purpose of defining the problem statement during the Problem Scoping stage in an AI project cycle?",
+    "signature": null,
+    "rubric": null,
+    "options": [
+      {
+        "id": "A",
+        "text": "To collect data"
+      },
+      {
+        "id": "B",
+        "text": "To understand the aim and objective of the project"
+      },
+      {
+        "id": "C",
+        "text": "To train the model"
+      },
+      {
+        "id": "D",
+        "text": "To process data"
+      }
+    ],
+    "correct_option_id": "B"
+  },
+  {
+    "id": "8",
+    "type": "MULTIPLE_CHOICE",
+    "title": "Categorization of AI Models",
+    "description": "In what ways can AI models be categorized based on the type of data fed into them?",
+    "signature": null,
+    "rubric": null,
+    "options": [
+      {
+        "id": "A",
+        "text": "Two domains"
+      },
+      {
+        "id": "B",
+        "text": "Four domains"
+      },
+      {
+        "id": "C",
+        "text": "Three domains"
+      },
+      {
+        "id": "D",
+        "text": "Five domains"
+      }
+    ],
+    "correct_option_id": "C"
+  },
+  {
+    "id": "9",
+    "type": "MULTIPLE_CHOICE",
+    "title": "Function of Statistical Data",
+    "description": "In Statistical Data, what is the primary function of the system in relation to data?",
+    "signature": null,
+    "rubric": null,
+    "options": [
+      {
+        "id": "A",
+        "text": "Generating large datasets"
+      },
+      {
+        "id": "B",
+        "text": "Analyzing data to extract insights"
+      },
+      {
+        "id": "C",
+        "text": "Converting data into images"
+      },
+      {
+        "id": "D",
+        "text": "Distributing data across networks"
+      }
+    ],
+    "correct_option_id": "B"
+  },
+  {
+    "id": "10",
+    "type": "MULTIPLE_CHOICE",
+    "title": "Goal of Computer Vision",
+    "description": "What is the main goal of Computer Vision projects?",
+    "signature": null,
+    "rubric": null,
+    "options": [
+      {
+        "id": "A",
+        "text": "Translating audio data into visual descriptions"
+      },
+      {
+        "id": "B",
+        "text": "Converting digital data into analogue signals"
+      },
+      {
+        "id": "C",
+        "text": "Teaching machines to understand textual information"
+      },
+      {
+        "id": "D",
+        "text": "Converting digital visual data into computer-readable language"
+      }
+    ],
+    "correct_option_id": "D"
+  },
+  {
+    "id": "11",
+    "type": "MULTIPLE_CHOICE",
+    "title": "Focus of NLP",
+    "description": "What is the primary focus of NLP?",
+    "signature": null,
+    "rubric": null,
+    "options": [
+      {
+        "id": "A",
+        "text": "Analyzing computer languages"
+      },
+      {
+        "id": "B",
+        "text": "Interacting between computers and humans using artificial language"
+      },
+      {
+        "id": "C",
+        "text": "Dealing with the interaction between computers and humans using natural language"
+      },
+      {
+        "id": "D",
+        "text": "Enhancing human-to-human communication"
+      }
+    ],
+    "correct_option_id": "C"
+  },
+  {
+    "id": "12",
+    "type": "OPEN_ENDED",
+    "title": "Steps in AI Project Cycle",
+    "description": "Outline the main steps in the AI Project Cycle briefly.",
+    "signature": null,
+    "rubric": "The student must state the 6 stages of the AI project cycle: 1) Problem Scoping, 2) Data Acquisition, 3) Data Exploration, 4) Modelling, 5) Evaluation, and 6) Deployment.",
+    "options": null,
+    "correct_option_id": null
+  },
+  {
+    "id": "13",
+    "type": "OPEN_ENDED",
+    "title": "Value-based Frameworks",
+    "description": "How do value-based frameworks contribute to ethical decision-making by emphasizing fundamental principles and values?",
+    "signature": null,
+    "rubric": "The student should explain that value-based frameworks focus on moral philosophies and assess the moral worth of actions, typically categorized into rights-based, utility-based, and virtue-based approaches.",
+    "options": null,
+    "correct_option_id": null
+  }
+]
